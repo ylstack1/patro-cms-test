@@ -1,0 +1,44 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "patro-cms-test",
+  "main": "my-patro-app/src/index.ts",
+  "compatibility_date": "2025-07-18",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "patrocms-db",
+      "migrations_dir": "packages/core/migrations","database_id": "f8aee6b9-d2b1-403c-afd2-08b96424c302"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "MEDIA_BUCKET",
+      "bucket_name": "patrocms-media","preview_bucket_name": "patrocms-media"
+    }
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "CACHE_KV",
+      "id": "5e76e5066673436d94555fb11fdbce5c" 
+    }
+  ],
+  "ai": {
+    "binding": "AI"
+  },
+  "vars": {
+    "ENVIRONMENT": "production"
+  },
+  "rules": [
+    {
+      "type": "ESModule",
+      "globs": [
+        "**/*.ts",
+        "**/*.js"
+      ],
+      "fallthrough": true
+    }
+  ]
+}

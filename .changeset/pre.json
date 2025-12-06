@@ -1,0 +1,28 @@
+{
+  "mode": "pre",
+  "tag": "beta",
+  "initialVersions": {
+    "my-patro-app": "0.0.1",
+    "@patro-io/cms": "0.0.6",
+    "@patro-io/create-cms": "0.0.6",
+    "patro/templates": "2.0.0",
+    "@patro-io/templates": "2.0.0"
+  },
+  "changesets": [
+    "blue-needles-peel",
+    "bumpy-hoops-rule",
+    "floppy-laws-find",
+    "full-bugs-eat",
+    "good-llamas-dress",
+    "honest-islands-begin",
+    "many-flowers-unite",
+    "moody-words-scream",
+    "old-cows-turn",
+    "pink-ends-talk",
+    "sixty-brooms-turn",
+    "slow-brooms-occur",
+    "soft-dryers-push",
+    "tasty-lands-start",
+    "tough-humans-carry"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "name": "@patro-io/create-cms",
+  "version": "0.1.0-beta.14",
+  "description": "Create a new PatroCMS application with zero configuration",
+  "type": "module",
+  "bin": {
+    "create-patro-cms": "./bin/create-cms-app.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "templates/**/*",
+    "templates/starter/.gitignore"
+  ],
+  "scripts": {
+    "build": "echo 'No build needed for CLI'",
+    "test": "node test-cli.js"
+  },
+  "keywords": [
+    "patro",
+    "cms",
+    "create-app",
+    "scaffolding",
+    "cloudflare",
+    "workers",
+    "edge",
+    "headless-cms"
+  ],
+  "author": "Patro <team@patro.io> (https://patro.io)",
+  "license": "FSL-1.1-MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/patro-io/cms.git",
+    "directory": "packages/create-app"
+  },
+  "bugs": {
+    "url": "https://github.com/patro-io/cms/issues"
+  },
+  "homepage": "https://patro.io",
+  "dependencies": {
+    "execa": "^9.6.1",
+    "fs-extra": "^11.3.2",
+    "kleur": "^4.1.5",
+    "ora": "^9.0.0",
+    "posthog-node": "^5.15.0",
+    "prompts": "^2.4.2",
+    "validate-npm-package-name": "^7.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

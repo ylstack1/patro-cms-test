@@ -1,0 +1,31 @@
+{
+  "name": "patro-cms",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-07-18",
+  "compatibility_flags": ["nodejs_compat"],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "patro-cms-db",
+      "migrations_dir": "../packages/core/migrations"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "MEDIA_BUCKET",
+      "bucket_name": "patro-cms-media"
+    }
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "CACHE_KV",
+      "id": "" 
+    }
+  ],
+  "ai": {
+    "binding": "AI"
+  },
+  "vars": {
+    "ENVIRONMENT": "development"
+  }
+}
